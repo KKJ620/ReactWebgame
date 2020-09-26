@@ -44,7 +44,7 @@ const path = require("path"); // 노드에서 경로를 조작하기 위해
 module.exports = {
   name: "wordrelay-setting",
   mode: "development", //실서비스 : production
-  devtool: "eval", //빠르게
+  devtool: "eval", //빠르게 실서비스 : hidden-source-map
   resolve: {
     extensions: [".js", ".jsx"],
   },
@@ -73,6 +73,5 @@ module.exports = {
     filename: "app.js",
   }, //출력 : jsx파일을 하나로 합쳐서 app.js로
 };
-
 ```
 
